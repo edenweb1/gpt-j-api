@@ -11,6 +11,8 @@ from mesh_transformer.sampling import nucleaus_sample
 from mesh_transformer.transformer_shard import CausalTransformer
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 import uvicorn
 
 from typing import Optional
