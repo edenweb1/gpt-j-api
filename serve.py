@@ -18,6 +18,15 @@ import uvicorn
 from typing import Optional
 
 app = FastAPI()
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 params = {
     "layers": 28,
     "d_model": 4096,
@@ -69,7 +78,7 @@ async def generate(
     start = time.time()
     tokens = tokenizer.encode(context)
     provided_ctx = len(tokens)
-    if token_max_length + provided_ctx > 2048:
+    if token_max_length + provided_ctx > 20000:
         return {"text": "Don't abuse the API, please."}
     pad_amount = seq - provided_ctx
 
