@@ -1,6 +1,6 @@
-jax==0.2.12
-optax==0.0.6
-transformers~=4.4.2
+jax
+optax
+transformers
 git+https://github.com/kingoflolz/mesh-transformer-jax/tree/fa5abc5309719fe3f839da81c66dbe8c431e1238
 smart_open[gcs]
 dm-haiku
