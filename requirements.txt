@@ -1,7 +1,7 @@
 jax
 optax
 transformers
-git+https://github.com/kingoflolz/mesh-transformer-jax/tree/fa5abc5309719fe3f839da81c66dbe8c431e1238
+git+https://github.com/kingoflolz/mesh-transformer-jax.git#egg=mesh-transformer
 smart_open[gcs]
 dm-haiku
 einops~=0.3.0
