@@ -1,5 +1,6 @@
 jax==0.2.12
 transformers~=4.4.2
+git+https://github.com/edenweb1/mesh-transformer-jax.git#egg=mesh-transformer
 smart_open[gcs]
 dm-haiku
 einops~=0.3.0
@@ -7,3 +8,7 @@ ray
 fastapi
 uvicorn
 streamlit~=0.84.0
+tensorflow==2.5.0
+optax==0.0.9
+chex==0.1.2
+jaxlib==0.1.68
