@@ -10,11 +10,11 @@ def main():
         page_title="The Big Language Model Workshop",  # String or None. Strings get appended with "• Streamlit".
         page_icon=None,  # String, anything supported by st.image, or None.
     )
-    st.title("French GPT-J")
+    st.title("French GPT-J Demo")
     """This app enables you to interact with large language models in a friendly way!"""
 
     ex_names = [
-        "In a shocking finding, scientists discovered a herd of unicorns living in a remote, previously unexplored valley, in the Andes Mountains. Even more surprising to the researchers was the fact that the unicorns spoke perfect English.",
+        "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
         """Tweet: "I hate it when my phone battery dies."
 Sentiment: Negative
@@ -99,7 +99,7 @@ A:""",
         col1.form_submit_button("👍", on_click=on_click_good)
         col2.form_submit_button("👎", on_click=on_click_bad)
 
-    st.text("App baked with ❤️ by @vicgalle")
+    st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
 
 if __name__ == "__main__":
