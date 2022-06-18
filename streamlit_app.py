@@ -71,7 +71,7 @@ Triste, et le jour pour moi sera comme la nuit."""
             response = query.json()
 
             st.markdown(response["""prompt"""] + response["""text"""])
-            st.text(f"Generation done in {response['compute_time']:.3} s.")
+            st.text_area(response["""prompt"""] + response["""text"""])
            
 
     if False:
