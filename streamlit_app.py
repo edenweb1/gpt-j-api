@@ -42,7 +42,7 @@ Triste, et le jour pour moi sera comme la nuit."""
     example = st.selectbox("Choisissez votre suggestion", ex_names)
 
     inp = st.text_area(
-        "ou ecrivez votre propre suggestion ici!", example, max_chars=2000, height=150
+        "ou ecrivez votre propre suggestion ici!", example, max_chars=20000, height=150
     )
 
     try:
