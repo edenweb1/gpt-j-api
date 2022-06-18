@@ -9,6 +9,14 @@ def main():
         initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
         page_title="French GPT-J demo",  # String or None. Strings get appended with "• Streamlit".
         page_icon=None,  # String, anything supported by st.image, or None.
+        page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
     )
     st.title("French GPT-J Demo")
     """This app enables you to interact with large language models in a friendly way!"""
