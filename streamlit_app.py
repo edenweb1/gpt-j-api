@@ -11,6 +11,17 @@ def main():
         page_icon=None,  # String, anything supported by st.image, or None.
         
     )
+    page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    
     st.title("French GPT-J Demo")
     """This app enables you to interact with large language models in a friendly way!"""
 
