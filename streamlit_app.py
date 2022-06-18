@@ -10,7 +10,7 @@ def main():
         page_title="The Big Language Model Workshop",  # String or None. Strings get appended with "• Streamlit".
         page_icon=None,  # String, anything supported by st.image, or None.
     )
-    st.title("The Big Language Model Workshop")
+    st.title("French GPT-J")
     """This app enables you to interact with large language models in a friendly way!"""
 
     ex_names = [
