@@ -72,7 +72,7 @@ Triste, et le jour pour moi sera comme la nuit."""
 
             st.markdown(response["prompt"] + response["text"])
             st.text(f"Generation done in {response['compute_time']:.3} s.")
-            inp = st.text(f"Generation done in {response['compute_time']:.3} s.")
+            rep = inp.st.text(f"Generation done in {response['compute_time']:.3} s.")
 
     if False:
         col1, col2, *rest = st.beta_columns([1, 1, 10, 10])
