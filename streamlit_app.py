@@ -16,33 +16,21 @@ def main():
     ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
-        """Tweet: "I hate it when my phone battery dies."
-Sentiment: Negative
-###
-Tweet: My day has been 👍.
-Sentiment: Positive
-###
-Tweet: This is the link to the article.
-Sentiment: Neutral
-###
-Tweet: This new movie started strange but in the end it was awesome.
-Sentiment:""",
-        """Q: Fetch the departments that have less than five people in it.\n
-A: SELECT DEPARTMENT, COUNT(WOKRED_ID) as "Number of Workers" FROM Worker GROUP BY DEPARTMENT HAVING COUNT(WORKED_ID) < 5;\n
-###\n
-Q: Show all departments along with the number of people in each department\n
-A: SELECT DEPARTMENT, COUNT(DEPARTMENT) as "Number of Workers" FROM Worker GROUP BY DEPARTMENT;\n
-###\n
-Q: Show the last record of the Worker table\n
-A: SELECT * FROM Worker ORDER BY LAST_NAME DESC LIMIT 1;\n
-###\n
-Q: Fetch the three max salaries from the Worker table;\n
-A:""",
+        """Demain, dès l'aube, à l'heure où blanchit la campagne,
+Je partirai. Vois-tu, je sais que tu m'attends.
+J'irai par la forêt, j'irai par la montagne.
+Je ne puis demeurer loin de toi plus longtemps.
+
+Je marcherai les yeux fixés sur mes pensées,
+Sans rien voir au dehors, sans entendre aucun bruit,
+Seul, inconnu, le dos courbé, les mains croisées,
+Triste, et le jour pour moi sera comme la nuit."""
+       
     ]
-    example = st.selectbox("Choose an example prompt from this selector", ex_names)
+    example = st.selectbox("Choisissez votre suggestion", ex_names)
 
     inp = st.text_area(
-        "Or write your own prompt here!", example, max_chars=2000, height=150
+        "ou ecrivez votre propre suggestion ici!", example, max_chars=2000, height=150
     )
 
     try:
@@ -50,7 +38,7 @@ A:""",
     except ValueError:
         rec = 0
 
-    with st.beta_expander("Generation options..."):
+    with st.beta_expander("Options de generations"):
         length = st.slider(
             "Choose the length of the generated texts (in tokens)",
             2,
