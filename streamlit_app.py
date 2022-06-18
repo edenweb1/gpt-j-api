@@ -72,7 +72,7 @@ Triste, et le jour pour moi sera comme la nuit."""
             
             rep = response["""prompt"""] + response["""text"""]
                        
-            st.text_area("reponse",rep,  max_chars=2000, height=150)
+            inp.text_area("reponse",rep,  max_chars=2000, height=150)
            
 
     if False:
