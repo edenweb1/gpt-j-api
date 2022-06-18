@@ -69,7 +69,9 @@ Triste, et le jour pour moi sera comme la nuit."""
 
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()
-
+            
+            rep = response["""prompt"""] + response["""text"""]
+            print (rep)
             st.markdown(response["""prompt"""] + response["""text"""])
             st.text_area(response["""prompt"""] + response["""text"""])
            
