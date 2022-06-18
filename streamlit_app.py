@@ -42,7 +42,7 @@ A:""",
     example = st.selectbox("Choose an example prompt from this selector", ex_names)
 
     inp = st.text_area(
-        "Or write your own prompt here!", example, max_chars=2000, height=150
+        "Or write your own prompt here!", example, max_chars=20000, height=150
     )
 
     try:
