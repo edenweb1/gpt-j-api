@@ -81,7 +81,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
-            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=update(value))		
+            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=update("updated"))		
             st.session_state.example=inpnext 
 	   
            
