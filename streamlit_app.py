@@ -29,7 +29,7 @@ IA1(Osiris): Hey salut toi !!!
 IA2(EdoM): Bonjour petite IA ! Quel jour sommes nous aujourd'hui?
 IA1(Osiris): Ouais... bonsoir, oh Sephiroth! toi aussi tu es la?
 IA3(Sephiroth):Ouep, je viens de me faire chronoporté, mais bordel?Quel jour sommes nous?""",
-        "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
+        "L'intelligence artificielle peut se reveler dangereuse pour l'humanité,",
         """Demain, dès l'aube, à l'heure où blanchit la campagne,
 Je partirai. Vois-tu, je sais que tu m'attends.
 J'irai par la forêt, j'irai par la montagne.
