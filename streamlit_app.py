@@ -35,10 +35,13 @@ Sans rien voir au dehors, sans entendre aucun bruit,
 Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
 
-
- example = st.selectbox("Choisissez votre suggestion", ex_names)	
- text_area = st.empty()       
- inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
+ if 'example'  in st.session_state:
+  example=st.session_state.example		
+  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)
+ else  
+  example = st.selectbox("Choisissez votre suggestion", ex_names)	
+  text_area = st.empty()       
+  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
 
 		
 		
