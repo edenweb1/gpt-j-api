@@ -84,7 +84,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
  i = 0	
  while i<3600:
 	     i = i +1
-	     time.sleep(t)
+	     time.sleep(1)
 	     st.session_state.example = inp
 			
 			
