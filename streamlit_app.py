@@ -29,7 +29,7 @@ Sans rien voir au dehors, sans entendre aucun bruit,
 Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
 
-prompt = "test"
+
 example = st.selectbox("Choisissez votre suggestion", ex_names)
 
 	
@@ -37,7 +37,7 @@ text_area = st.empty()
 if 'inp' not in st.session_state:
                
  inp = text_area.text_area(
-        "ou ecrivez votre propre suggestion ici!", prompt , max_chars=20000, height=600
+        "ou ecrivez votre propre suggestion ici!", inp , max_chars=20000, height=600
      )   
 
 with st.beta_expander("Options de generations"):
