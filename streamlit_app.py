@@ -35,10 +35,10 @@ example = st.selectbox("Choisissez votre suggestion", ex_names)
 	
 text_area = st.empty()
 inp = "ran"
-if 'inp' not in st.session_state:
+if 'example' not in st.session_state:
                
  inp = text_area.text_area(
-        "ou ecrivez votre propre suggestion ici!", inp , max_chars=20000, height=600
+        "ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600
      )   
 
 with st.beta_expander("Options de generations"):
