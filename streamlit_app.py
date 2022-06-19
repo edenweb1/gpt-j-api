@@ -87,9 +87,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 			
 	   
 	    
- increment = st.button('Increment')
- if increment: 
-  st.session_state.example = inpnext
+ 
   
  st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
