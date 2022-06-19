@@ -55,14 +55,14 @@ Triste, et le jour pour moi sera comme la nuit."""
             "Choose the length of the generated texts (in tokens)",
             2,
             1024,
-            512 if rec < 2 else 50,
+            512 ,
             10,
         )
         temp = st.slider(
             "Choose the temperature (higher - more random, lower - more repetitive). For the code generation or sentence classification promps it's recommended to use a lower value, like 0.35",
             0.0,
             1.5,
-            1.0 if rec < 2 else 0.35,
+            1.0 ,
             0.05,
         )
 
