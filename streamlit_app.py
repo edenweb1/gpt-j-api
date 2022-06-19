@@ -3,6 +3,9 @@ import time
 import requests
 import random
 
+if 'count' not in st.session_state:
+	st.session_state.count = 0
+
 
 st.set_page_config( 
        
