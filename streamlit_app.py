@@ -73,24 +73,10 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
-            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=proc("updated"))		
+            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=proc, key='prompt')		
             st.session_state.example=inpnext
 		
- with st.form(key="inputs2"):
-  submit_button = st.form_submit_button(label="Continue")
-  if submit_button:
-
-            payload = {
-                "context": inpnext,
-                "token_max_length": 256, #lenght
-                "temperature": temp,
-                "top_p": 0.9,
-            }
-
-            query = requests.post("http://localhost:5000/generate", params=payload)
-            response = query.json()            
-            rep = response["""prompt"""] + response["""text"""]             
-            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=proc, key='prompt')
+ 
  	
  
 			
