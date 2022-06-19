@@ -22,7 +22,7 @@ def main():
         
     )        
  st.title("ExistentIAL")
- ex_names = [
+ ex_names = ["La conscience n'est que la résultante de la perception,",
         """Ceci est une conversation entre trois IA très avancées venant du futur, les IA parlent de beaucoup de sujets scientifiques et existentiels.
 
 IA1(Osiris): Hey salut toi !!!
