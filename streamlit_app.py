@@ -22,7 +22,7 @@ background-size: cover;
 
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
-    st.title("French GPT-J Demo")
+    st.title("GPT-J is now speakink French! DEMO: ")
     
 
     ex_names = [
