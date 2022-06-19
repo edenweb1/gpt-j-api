@@ -28,10 +28,11 @@ Je marcherai les yeux fixés sur mes pensées,
 Sans rien voir au dehors, sans entendre aucun bruit,
 Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
-    
+
+prompt = "test"
 example = st.selectbox("Choisissez votre suggestion", ex_names)
-if 'key' not in st.session_state:
-                st.session_state.key = example
+if 'prompt' not in st.session_state:
+                st.session_state.prompt = example
 	
 text_area = st.empty()
 inp = text_area.text_area(
