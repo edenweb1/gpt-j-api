@@ -23,7 +23,7 @@ background-size: cover;
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
     st.title("French GPT-J Demo")
-    """This app enables you to interact with large language models in a friendly way!"""
+    
 
     ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
