@@ -33,12 +33,12 @@ example = st.selectbox("Choisissez votre suggestion", ex_names)
 	
 text_area = st.empty()
 
-if 'example' not in st.session_state:
+if 'area' not in st.session_state:
        
  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
 else:
  #st.write(st.session_state.example)	
- inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", st.session_state.example , max_chars=20000, height=600) 
+ inp = st.session_state.area
 		
 		
 
@@ -75,7 +75,7 @@ with st.form(key="inputs"):
             rep = response["""prompt"""] + response["""text"""]             
             inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
 	    
-            st.session_state.example = rep
+            st.session_state.area = inp
    
 
 st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
