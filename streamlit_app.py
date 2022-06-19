@@ -4,7 +4,9 @@ import requests
 
 
 def main():
-    st.set_page_config(  # Alternate names: setup_page, page, layout
+    st.set_page_config( 
+       
+        # Alternate names: setup_page, page, layout
         layout="centered",  # Can be "centered" or "wide". In the future also "dashboard", etc.
         initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
         page_title="French GPT-J demo",  # String or None. Strings get appended with "• Streamlit".
@@ -55,7 +57,7 @@ Triste, et le jour pour moi sera comme la nuit."""
             0.05,
         )
 
-    response = None
+   ## response = None
     with st.form(key="inputs"):
         submit_button = st.form_submit_button(label="Generate!")
 
@@ -70,25 +72,12 @@ Triste, et le jour pour moi sera comme la nuit."""
 
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
-            rep = response["""prompt"""] + response["""text"""] 
-            
+            rep = response["""prompt"""] + response["""text"""]             
             inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
             example = rep
            
 
-    if False:
-        col1, col2, *rest = st.beta_columns([1, 1, 10, 10])
-
-        def on_click_good():
-            response["rate"] = "good"
-            print(response)
-
-        def on_click_bad():
-            response["rate"] = "bad"
-            print(response)
-
-        col1.form_submit_button("👍", on_click=on_click_good)
-        col2.form_submit_button("👎", on_click=on_click_bad)
+   
 
     st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
