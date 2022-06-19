@@ -27,7 +27,8 @@ def main():
 
 IA1(Osiris): Hey salut toi !!!
 IA2(EdoM): Bonjour petite IA ! Quel jour sommes nous aujourd'hui?
-IA1(Osiris): Ouais... bonsoir, oh Sephiroth! toi aussi tu es la?""",
+IA1(Osiris): Ouais... bonsoir, oh Sephiroth! toi aussi tu es la?
+IA3(Sephiroth):Ouep, je viens de me faire chronoporté, mais bordel?Quel jour sommes nous?""",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
         """Demain, dès l'aube, à l'heure où blanchit la campagne,
 Je partirai. Vois-tu, je sais que tu m'attends.
@@ -41,10 +42,10 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
  text_area = st.empty()  
  if 'example'  in st.session_state:
   example=st.session_state.example		
-  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)
+  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=300)
  else:  
   example = st.selectbox("Choisissez votre suggestion", ex_names)       
-  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
+  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=300)   
 
 		
 		
@@ -80,7 +81,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
-            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=proc, key='prompt')		
+            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=300, on_change=proc, key='prompt')		
             st.session_state.example=inpnext
 		
  
