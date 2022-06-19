@@ -57,7 +57,7 @@ Triste, et le jour pour moi sera comme la nuit."""
             0.05,
         )
 
-   ## response = None
+    response = None
     with st.form(key="inputs"):
         submit_button = st.form_submit_button(label="Generate!")
 
