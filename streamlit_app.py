@@ -78,9 +78,9 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
-            inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
+            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
 	    
-            st.session_state.example = inp
+            st.session_state.example = inpnext
  	
  
 			
@@ -89,7 +89,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 	    
  increment = st.button('Increment')
  if increment: 
-  st.session_state.example = inp
+  st.session_state.example = inpnext
   
  st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
