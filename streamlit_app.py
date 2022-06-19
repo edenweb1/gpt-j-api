@@ -81,6 +81,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             st.session_state.example = rep
    
 
-  st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
+  
+ st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
 
