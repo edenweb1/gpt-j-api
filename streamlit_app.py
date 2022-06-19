@@ -73,8 +73,9 @@ Triste, et le jour pour moi sera comme la nuit."""
 
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
-            rep = response["""prompt"""] + response["""text"""]                        
-            text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
+            rep = response["""prompt"""] + response["""text"""]    
+            example = rep
+            text_area.text_area("ou ecrivez votre propre suggestion ici!",example,  max_chars=10000, height=600)
            
 
     if False:
