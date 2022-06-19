@@ -79,6 +79,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
 	    
             st.session_state.example = rep
+	    main()
    
 
   
