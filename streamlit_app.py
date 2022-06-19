@@ -38,7 +38,7 @@ if 'example' not in st.session_state:
  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", prompt , max_chars=20000, height=600)   
 else:
  st.write(st.session_state.example)	
- inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", "session" , max_chars=20000, height=600) 
+ inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", st.session_state.key , max_chars=20000, height=600) 
 		
 		
 
