@@ -1,6 +1,7 @@
 import streamlit as st
 import time
 import requests
+import random
 
 
 def main():
@@ -13,7 +14,7 @@ def main():
         page_icon=None,  # String, anything supported by st.image, or None.
         
     )        
-    st.title("GPT-J is now speaking French! DEMO: ")
+    st.title(str(random.random()))
     ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
