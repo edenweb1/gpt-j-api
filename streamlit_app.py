@@ -83,6 +83,7 @@ Triste, et le jour pour moi sera comme la nuit."""
             response = query.json()
             
             rep = response["""prompt"""] + response["""text"""]
+            example = rep
                        
             st.text_area("reponse",rep,  max_chars=10000, height=600)
            
