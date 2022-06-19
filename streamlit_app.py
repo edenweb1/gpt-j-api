@@ -4,8 +4,8 @@ import requests
 import random
 
 
-def main():
-    st.set_page_config( 
+
+st.set_page_config( 
        
         # Alternate names: setup_page, page, layout
         layout="centered",  # Can be "centered" or "wide". In the future also "dashboard", etc.
@@ -14,8 +14,8 @@ def main():
         page_icon=None,  # String, anything supported by st.image, or None.
         
     )        
-    st.title(str(random.random()))
-    ex_names = [
+st.title(str(random.random()))
+ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
         """Demain, dès l'aube, à l'heure où blanchit la campagne,
@@ -28,13 +28,13 @@ Sans rien voir au dehors, sans entendre aucun bruit,
 Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
     
-    example = st.selectbox("Choisissez votre suggestion", ex_names)
-    text_area = st.empty()
-    inp = text_area.text_area(
+example = st.selectbox("Choisissez votre suggestion", ex_names)
+text_area = st.empty()
+inp = text_area.text_area(
         "ou ecrivez votre propre suggestion ici!", "", max_chars=20000, height=600
     )   
 
-    with st.beta_expander("Options de generations"):
+with st.beta_expander("Options de generations"):
         length = st.slider(
             "Choose the length of the generated texts (in tokens)",
             2,
@@ -49,9 +49,8 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             1.0 ,
             0.05,
         )
-
-    response = None
-    with st.form(key="inputs"):
+response = None
+with st.form(key="inputs"):
         submit_button = st.form_submit_button(label="Generate!")
 
         if submit_button:
@@ -73,8 +72,6 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 
    
 
-    st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
+st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
 
-if __name__ == "__main__":
-    main()
