@@ -31,13 +31,14 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 
 prompt = "test"
 example = st.selectbox("Choisissez votre suggestion", ex_names)
-if 'prompt' not in st.session_state:
-                st.session_state.prompt = example
+
 	
 text_area = st.empty()
-inp = text_area.text_area(
+if 'inp' not in st.session_state:
+               
+ inp = text_area.text_area(
         "ou ecrivez votre propre suggestion ici!", prompt , max_chars=20000, height=600
-    )   
+     )   
 
 with st.beta_expander("Options de generations"):
         length = st.slider(
