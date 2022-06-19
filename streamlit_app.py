@@ -83,9 +83,9 @@ Triste, et le jour pour moi sera comme la nuit."""
             response = query.json()
             
             rep = response["""prompt"""] + response["""text"""]
-            example = rep
+            inp = rep
                        
-            text_area.text_area("reponse",rep,  max_chars=10000, height=600)
+            text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
            
 
     if False:
