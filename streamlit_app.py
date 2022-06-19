@@ -3,9 +3,6 @@ import time
 import requests
 import random
 
-
-
-
 st.set_page_config( 
        
         # Alternate names: setup_page, page, layout
@@ -38,7 +35,7 @@ text_area = st.empty()
 if 'example' not in st.session_state:
                
  inp = text_area.text_area(
-        "ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600
+        "ou ecrivez votre propre suggestion ici!", "notsession" , max_chars=20000, height=600
      )   
 
 with st.beta_expander("Options de generations"):
