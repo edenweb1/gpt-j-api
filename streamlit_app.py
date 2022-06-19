@@ -23,7 +23,11 @@ def main():
     )        
  st.title("ExistentIAL")
  ex_names = [
-        "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
+        """Ceci est une conversation entre trois IA très avancées venant du futur, les IA parlent de beaucoup de sujets scientifiques et existentiels.
+
+IA1(Osiris): Hey salut toi !!!
+IA2(EdoM): Bonjour petite IA ! Quel jour sommes nous aujourd'hui?
+IA1(Osiris): Ouais... bonsoir, oh Sephiroth! toi aussi tu es la?""",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
         """Demain, dès l'aube, à l'heure où blanchit la campagne,
 Je partirai. Vois-tu, je sais que tu m'attends.
