@@ -67,9 +67,9 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             rep = response["""prompt"""] + response["""text"""]             
             next = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
             with st.form(key="inputs"):
-        submit_button = st.form_submit_button(label="Continue")
+            submit_button = st.form_submit_button(label="Continue")
 
-        if submit_button:
+            if submit_button:
 
             payload = {
                 "context": next,
