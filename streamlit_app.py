@@ -73,7 +73,7 @@ with st.form(key="inputs"):
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
             inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
-	    st.session_state.example = rep
+	    st.session_state.example = 'rep'
             
            
             
