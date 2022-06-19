@@ -29,12 +29,13 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 
 example = st.selectbox("Choisissez votre suggestion", ex_names)
 
+
 	
 text_area = st.empty()
 
 if 'example' not in st.session_state:
-               
- inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", "notsession" , max_chars=20000, height=600)   
+ prompt = example              
+ inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", prompt , max_chars=20000, height=600)   
 else:
  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", "session" , max_chars=20000, height=600) 
 		
