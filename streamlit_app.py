@@ -8,11 +8,11 @@ st.set_page_config(
         # Alternate names: setup_page, page, layout
         layout="centered",  # Can be "centered" or "wide". In the future also "dashboard", etc.
         initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
-        page_title="French GPT-J dem0",  # String or None. Strings get appended with "• Streamlit".
+        page_title="ExistentIAL",  # String or None. Strings get appended with "• Streamlit".
         page_icon=None,  # String, anything supported by st.image, or None.
         
     )        
-st.title(str(random.random()))
+st.title("ExistentIAL")
 ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
