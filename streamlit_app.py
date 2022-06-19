@@ -35,14 +35,8 @@ Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
 
 
- example = st.selectbox("Choisissez votre suggestion", ex_names)
-
-
-	
- text_area = st.empty()
-
-
-       
+ example = st.selectbox("Choisissez votre suggestion", ex_names)	
+ text_area = st.empty()       
  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
 
 		
@@ -71,7 +65,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 
             payload = {
                 "context": inp,
-                "token_max_length": length,
+                "token_max_length": 256, #lenght
                 "temperature": temp,
                 "top_p": 0.9,
             }
@@ -80,9 +74,22 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
             inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=update("updated"))		
-            st.session_state.example=inpnext 
-	   
-           
+            st.session_state.example=inpnext    
+ with st.form(key="inputs2"):
+        submit_button = st.form_submit_button(label="Continue")
+	if submit_button:
+
+            payload = {
+                "context": inpnext,
+                "token_max_length": 256, #lenght
+                "temperature": temp,
+                "top_p": 0.9,
+            }
+
+            query = requests.post("http://localhost:5000/generate", params=payload)
+            response = query.json()            
+            rep = response["""prompt"""] + response["""text"""]             
+            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600, on_change=update("updated"))
  	
  
 			
