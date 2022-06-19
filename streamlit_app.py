@@ -35,8 +35,8 @@ text_area = st.empty()
 if 'example' not in st.session_state:
                
  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", "notsession" , max_chars=20000, height=600)   
- else:
-		inp = text_area.text_area("session", "notsession" , max_chars=20000, height=600) 
+else:
+ inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", "session" , max_chars=20000, height=600) 
 		
 		
 
