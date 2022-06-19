@@ -3,8 +3,7 @@ import time
 import requests
 import random
 
-if 'count' not in st.session_state:
-	st.session_state.count = 0
+
 
 
 st.set_page_config( 
@@ -31,9 +30,12 @@ Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
     
 example = st.selectbox("Choisissez votre suggestion", ex_names)
+if 'key' not in st.session_state:
+                st.session_state.key = example
+	
 text_area = st.empty()
 inp = text_area.text_area(
-        "ou ecrivez votre propre suggestion ici!", "", max_chars=20000, height=600
+        "ou ecrivez votre propre suggestion ici!", key , max_chars=20000, height=600
     )   
 
 with st.beta_expander("Options de generations"):
@@ -68,7 +70,7 @@ with st.form(key="inputs"):
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
             inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
-            st.session_state.catch_rand = inp
+            st.session_state.count += 1
            
             
            
