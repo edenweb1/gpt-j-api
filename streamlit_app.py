@@ -7,6 +7,7 @@ import time
 
 def proc():
     st.write(st.session_state.prompt)
+    st.session_state.example=session_state.prompt
  
 
 def main():
