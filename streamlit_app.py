@@ -4,8 +4,6 @@ import requests
 import random
 import time 
 
-def update(text):
- st.session_state.example = text
 
 def main():
 
@@ -80,6 +78,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
             inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
+	    st.session_state.example = inpnext 
 	   
            
  	
@@ -88,7 +87,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 			
 	   
 	    
- st.session_state.example = inpnext 
+
   
  st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
