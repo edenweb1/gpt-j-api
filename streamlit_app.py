@@ -4,7 +4,6 @@ import requests
 import random
 
 
-
 st.set_page_config( 
        
         # Alternate names: setup_page, page, layout
@@ -49,7 +48,7 @@ with st.beta_expander("Options de generations"):
             1.0 ,
             0.05,
         )
-response = None
+##response = None
 with st.form(key="inputs"):
         submit_button = st.form_submit_button(label="Generate!")
 
