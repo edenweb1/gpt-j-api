@@ -12,13 +12,8 @@ def main():
         page_title="French GPT-J demo",  # String or None. Strings get appended with "• Streamlit".
         page_icon=None,  # String, anything supported by st.image, or None.
         
-    )
-   
-
-        
+    )        
     st.title("GPT-J is now speaking French! DEMO: ")
-    
-
     ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
@@ -30,16 +25,13 @@ Je ne puis demeurer loin de toi plus longtemps.
 Je marcherai les yeux fixés sur mes pensées,
 Sans rien voir au dehors, sans entendre aucun bruit,
 Seul, inconnu, le dos courbé, les mains croisées,
-Triste, et le jour pour moi sera comme la nuit."""
-       
-    ]
+Triste, et le jour pour moi sera comme la nuit."""    ]
+    
     example = st.selectbox("Choisissez votre suggestion", ex_names)
     text_area = st.empty()
     inp = text_area.text_area(
         "ou ecrivez votre propre suggestion ici!", example, max_chars=20000, height=600
-    )
-
-    
+    )   
 
     with st.beta_expander("Options de generations"):
         length = st.slider(
@@ -73,7 +65,7 @@ Triste, et le jour pour moi sera comme la nuit."""
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
-            inp = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
+            text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=600)
             
            
 
