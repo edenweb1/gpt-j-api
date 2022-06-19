@@ -84,4 +84,5 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
   
  st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
-
+if __name__ == "__main__":
+    main()
