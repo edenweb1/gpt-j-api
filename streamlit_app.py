@@ -3,7 +3,10 @@ import time
 import requests
 import random
 
-st.set_page_config( 
+
+def main():
+
+ st.set_page_config( 
        
         # Alternate names: setup_page, page, layout
         layout="centered",  # Can be "centered" or "wide". In the future also "dashboard", etc.
@@ -12,8 +15,8 @@ st.set_page_config(
         page_icon=None,  # String, anything supported by st.image, or None.
         
     )        
-st.title("ExistentIAL")
-ex_names = [
+ st.title("ExistentIAL")
+ ex_names = [
         "En termes simples, l'intelligence artificielle (IA) fait référence à des systèmes ou des machines qui imitent l'intelligence humaine pour effectuer des tâches et qui peuvent s'améliorer en fonction des informations collectées grâce à l'itération.",
         "The ancient people of Arcadia achieved oustanding cultural and technological developments. Below we summarise some of the highlights of the Acadian society.",
         """Demain, dès l'aube, à l'heure où blanchit la campagne,
@@ -27,22 +30,22 @@ Seul, inconnu, le dos courbé, les mains croisées,
 Triste, et le jour pour moi sera comme la nuit."""    ]
 
 
-example = st.selectbox("Choisissez votre suggestion", ex_names)
+ example = st.selectbox("Choisissez votre suggestion", ex_names)
 
 
 	
-text_area = st.empty()
+ text_area = st.empty()
 
-if 'example' not in st.session_state:
+ if 'example' not in st.session_state:
        
- inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
-else:
+  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
+ else:
  #st.write(st.session_state.example)	
- inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", st.session_state.example , max_chars=20000, height=600) 
+  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", st.session_state.example , max_chars=20000, height=600) 
 		
 		
 
-with st.beta_expander("Options de generations"):
+ with st.beta_expander("Options de generations"):
         length = st.slider(
             "Choose the length of the generated texts (in tokens)",
             2,
@@ -58,7 +61,7 @@ with st.beta_expander("Options de generations"):
             0.05,
         )
 ##response = None
-with st.form(key="inputs"):
+ with st.form(key="inputs"):
         submit_button = st.form_submit_button(label="Generate!")
 
         if submit_button:
@@ -78,6 +81,6 @@ with st.form(key="inputs"):
             st.session_state.example = rep
    
 
-st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
+  st.text("App baked with ❤️ by @edenweb1 and inspired by @vicgalle")
 
 
