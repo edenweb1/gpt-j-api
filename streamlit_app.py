@@ -41,12 +41,10 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
 	
  text_area = st.empty()
 
- if 'example' not in st.session_state:
+
        
-  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
- else:
- #st.write(st.session_state.example)	
-  inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", st.session_state.example , max_chars=20000, height=600) 
+ inp = text_area.text_area("ou ecrivez votre propre suggestion ici!", example , max_chars=20000, height=600)   
+
 		
 		
 
