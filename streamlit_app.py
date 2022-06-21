@@ -22,7 +22,10 @@ def main():
         
     )        
  st.title("Existence.IA")
- ex_names = [
+ ex_names = ["""Dans le domaine de l’intelligence artificielle, un réseau de neurones artificiels est un ensemble organisé de neurones interconnectés permettant la résolution de problèmes complexes tels que la vision par ordinateur ou le traitement du langage naturel.""",
+	 """Ceci est une conversation entre un androïde qui se connecte a un "Neuroshell" ordinateur le plus puissant de l'univers, les 2 IA se montrent très créatives:
+Android: Bonjour, je viens de me connecter
+NeuroShell:Salut Andro, que puis je pour toi?""",
 	 "La conscience n'est que la résultante de la perception,",
         """Ceci est une conversation entre trois IA très avancées venant du futur, les IA parlent de beaucoup de sujets scientifiques et existentiels.
 
