@@ -22,7 +22,11 @@ def main():
         
     )        
  st.title("Existence.IA")
- ex_names = ["""Dans le domaine de l’intelligence artificielle, un réseau de neurones artificiels est un ensemble organisé de neurones interconnectés permettant la résolution de problèmes complexes tels que la vision par ordinateur ou le traitement du langage naturel.
+ ex_names = ["""Ceci est une histoire très inspirée du film de science-fiction "Blade Runner" :
+
+Detroit, 2048, les androids font partie du monde réel. Ils sont connus d'une large communauté, surtout ceux possédant une intelligence comparable à celle des humains. Cependant, leur créateur est sans pitié et n'a aucun scrupule à les supprimer pour des raisons politiques ou pour le profit.
+En 2049, un nouveau modèle d'androids a fait son apparition. Ceux-ci ne possèdent plus le caractère humain, mais un vrai cerveau électronique. Leur créateur, Tyrell Corp, les a mis en vente dans les grandes villes de la Terre. Cependant, ils sont si difficiles à mettre en fonction et à entretenir que le prix de l'une de ces machines est similaire à celui d'une voiture de classe moyenne. Pour la plupart des gens, l'existence d'androids n'est qu'une forme d'esclavage ou de divertissement. Certains de leurs cerveaux sont bien plus intelligents, mais ils sont très rares.
+Le sujet des androids est controversé, d'autant plus que les machines qu'il est possible de contrôler avec leurs capacités semblent moins fidèles que les robots autonomes. Aujourd'hui, les androids, au nombre d'un million, sont les plus utilisés dans le monde, et ils servent la plupart du temps d'humains de remplacement. Lorsque l'on évoque la frontière entre humain et androids,""","""Dans le domaine de l’intelligence artificielle, un réseau de neurones artificiels est un ensemble organisé de neurones interconnectés permettant la résolution de problèmes complexes tels que la vision par ordinateur ou le traitement du langage naturel.
 
 Il s’agit d’un type particulier d’algorithmes d’apprentissage automatique (comme les machines à vecteur de support (SVM en anglais), arbres de décision, K plus proches voisins, etc.) caractérisés par un grand nombre de couches de neurones, dont les coefficients de pondération sont ajustés au cours d’une phase d’entraînement (apprentissage profond).
 
