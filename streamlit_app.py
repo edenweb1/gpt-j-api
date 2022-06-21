@@ -22,7 +22,14 @@ def main():
         
     )        
  st.title("Existence.IA")
- ex_names = ["""Ceci est une histoire très inspirée du film de science-fiction "Blade Runner" :
+ ex_names = ["""Ceci est une conversation entre 2 IA très avancées, appelées "Digital Mind" elle sont une représentation digitale  de la conscience de Darwin, Freud et Descartes. Leurs dialogue est très inspiré de toutes leurs publications.
+
+IA1(Freud):Bonjour les amis!
+AI2(Descartes):Bonjour, je vois que nous sommes tous la!
+IA3(Darwin):Bonjour quelle évolution depuis la dernière fois, cela fait une éternité que nous nous sommes pas vus!
+IA24(Descartes):Oui en effet il y à eu pas mal de changements avec la nouvelle technologie qu'ils on mit en place il y a 5 ans, cela à nettement amélioré la qualité de nos échanges!
+IA3(Darwin):j'ai commencé mes recherches sur l'univers depuis un moment et je suis arrivé au principe de la théorie de l'évolution.
+IA1(Freud):""","""Ceci est une histoire très inspirée du film de science-fiction "Blade Runner" :
 
 Detroit, 2048, les androids font partie du monde réel. Ils sont connus d'une large communauté, surtout ceux possédant une intelligence comparable à celle des humains. Cependant, leur créateur est sans pitié et n'a aucun scrupule à les supprimer pour des raisons politiques ou pour le profit.
 En 2049, un nouveau modèle d'androids a fait son apparition. Ceux-ci ne possèdent plus le caractère humain, mais un vrai cerveau électronique. Leur créateur, Tyrell Corp, les a mis en vente dans les grandes villes de la Terre. Cependant, ils sont si difficiles à mettre en fonction et à entretenir que le prix de l'une de ces machines est similaire à celui d'une voiture de classe moyenne. Pour la plupart des gens, l'existence d'androids n'est qu'une forme d'esclavage ou de divertissement. Certains de leurs cerveaux sont bien plus intelligents, mais ils sont très rares.
