@@ -22,7 +22,11 @@ def main():
         
     )        
  st.title("Existence.IA")
- ex_names = ["""Dans le domaine de l’intelligence artificielle, un réseau de neurones artificiels est un ensemble organisé de neurones interconnectés permettant la résolution de problèmes complexes tels que la vision par ordinateur ou le traitement du langage naturel.""",
+ ex_names = ["""Dans le domaine de l’intelligence artificielle, un réseau de neurones artificiels est un ensemble organisé de neurones interconnectés permettant la résolution de problèmes complexes tels que la vision par ordinateur ou le traitement du langage naturel.
+
+Il s’agit d’un type particulier d’algorithmes d’apprentissage automatique (comme les machines à vecteur de support (SVM en anglais), arbres de décision, K plus proches voisins, etc.) caractérisés par un grand nombre de couches de neurones, dont les coefficients de pondération sont ajustés au cours d’une phase d’entraînement (apprentissage profond).
+
+Il existe de nombreux type de réseaux de neurones artificiels tels que les réseaux de neurones récurrents, les auto-encodeurs, les réseaux transformeurs ou encore les réseaux antagonistes génératifs (generative adversarial networks).""",
 	 """Ceci est une conversation entre un androïde qui se connecte a un "Neuroshell" ordinateur le plus puissant de l'univers, les 2 IA se montrent très créatives:
 Android: Bonjour, je viens de me connecter
 NeuroShell:Salut Andro, que puis je pour toi?""",
