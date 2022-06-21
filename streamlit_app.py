@@ -64,7 +64,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
   inp = text_area.text_area("Ecrivez une introduction ici, puis cliquez en bas sur GENERATE et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir", example , max_chars=20000, height=800)
  else:  
   example = st.selectbox("ou choisissez un example de suggestion", ex_names)       
-  inp = text_area.text_area("Ecrivez une introduction ici, et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir", example , max_chars=20000, height=800)   
+  inp = text_area.text_area("Ecrivez une introduction ici, puis cliquez en bas sur GENERATE et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir", example , max_chars=20000, height=800)   
 
 		
 		
@@ -100,7 +100,7 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
             query = requests.post("http://localhost:5000/generate", params=payload)
             response = query.json()            
             rep = response["""prompt"""] + response["""text"""]             
-            inpnext = text_area.text_area("ou ecrivez votre propre suggestion ici!",rep,  max_chars=10000, height=800, on_change=proc, key='prompt')		
+            inpnext = text_area.text_area("Ecrivez une introduction ici, puis cliquez en bas sur GENERATE et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir",rep,  max_chars=10000, height=800, on_change=proc, key='prompt')		
             st.session_state.example=inpnext
 		
  
