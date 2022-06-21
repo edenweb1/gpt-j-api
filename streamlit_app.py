@@ -42,10 +42,10 @@ Triste, et le jour pour moi sera comme la nuit."""    ]
  text_area = st.empty()  
  if 'example'  in st.session_state:
   example=st.session_state.example		
-  inp = text_area.text_area("Ecrivez une introduction ici, et laissez l'IA continuer. Plus votre introduction sera consistente, plus le resultat sera pertinent, je vous conseil au minimum deux voir trois lignes", example , max_chars=20000, height=800)
+  inp = text_area.text_area("Ecrivez une introduction ici, et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir", example , max_chars=20000, height=800)
  else:  
   example = st.selectbox("ou choisissez un example de suggestion", ex_names)       
-  inp = text_area.text_area("Ecrivez une introduction ici, et laissez l'IA continuer. Plus votre introduction sera consistente, plus le resultat sera pertinent, je vous conseil au minimum deux voir trois lignes. Que ce soit une poesie, un script, un article, une narration, peut importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir", example , max_chars=20000, height=800)   
+  inp = text_area.text_area("Ecrivez une introduction ici, et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir", example , max_chars=20000, height=800)   
 
 		
 		
