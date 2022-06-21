@@ -22,7 +22,8 @@ def main():
         
     )        
  st.title("Existence.IA")
- ex_names = ["La conscience n'est que la résultante de la perception,",
+ ex_names = ["Ecrivez une introduction ici, et laissez l'IA continuer. Plus votre introduction sera consistante, plus le resultat sera pertinent, je vous conseille au minimum 2,3 lignes. Que ce soit une poesie, un script, un article, une narration, peu importe, soyez créatif et laissez l'IA essayer de comprendre ou vous voulez en venir"
+	 "La conscience n'est que la résultante de la perception,",
         """Ceci est une conversation entre trois IA très avancées venant du futur, les IA parlent de beaucoup de sujets scientifiques et existentiels.
 
 IA1(Osiris): Hey salut toi !!!
